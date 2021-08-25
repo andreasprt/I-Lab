@@ -1,0 +1,9 @@
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\bin\Debug\simulasi.exe.config
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\bin\Debug\simulasi.exe
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\bin\Debug\simulasi.pdb
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.csprojResolveAssemblyReference.cache
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.Form1.resources
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.Properties.Resources.resources
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.csproj.GenerateResource.Cache
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.exe
+D:\Project\FisDas_Prakt\NeoArdu\simulate\simulasi\simulasi\obj\Debug\simulasi.pdb
