@@ -94,10 +94,10 @@ void loop() {
     dt[0] = "a";
     dt[1] = "0";
   }
-  if (dt[0] == "c") {
+  if (dt[0] == "d") {
     dt[0] = "";
     for (int i = 0; i < jmlData; i++) {
-      Serial.print("[c,");
+      Serial.print("[d,");
       Serial.print(i);
       Serial.print(",");
       Serial.print(i);
