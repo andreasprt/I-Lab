@@ -132,7 +132,7 @@ void loop() {
   if (dt[0] == "b" && take == false) {
     Serial.println("[B]");
     take = true;
-    posisi1 = 10000;
+    posisi1 += 10000;
     digitalWrite(Rly, 1);
     // ambil();
     dt[0] = "";
