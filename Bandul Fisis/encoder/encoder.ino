@@ -66,7 +66,7 @@ void loop() {
   while (dt[0] == "a") {
     //dt[0] = "";
     setSudut = dt[1].toInt();
-    setSudut = constrain(setSudut, -20, 20);
+    setSudut = constrain(setSudut, 0, 20);
     bacaEncoder();
     gerak();
     //Serial.println(w);
@@ -85,11 +85,11 @@ void loop() {
   if (dt[0] == "b") {
 
     digitalWrite(relay2, 0);
-    
+
     Serial.print("[Tunggu Sampai ");
     Serial.print(jmlData);
     Serial.println(" ]");
-    
+
     baca();
     dt[0] = "a";
     dt[1] = "0";
@@ -104,8 +104,9 @@ void loop() {
       Serial.print(",");
       Serial.print(data[i]);
       Serial.print("]");
-      Serial.println();
+
     }
+    Serial.println();
   }
   //  int cnt = 0;
   //  while (dt[0] == "d") {
@@ -133,10 +134,10 @@ void baca() {
     //    sudut = constrain(sudut, -setSudut, setSudut);
     if (millis() - t > 200) {
       data[i] = sudut;
-      Serial.print(i);
-      Serial.print(",");
-      Serial.print(sudut);
-      Serial.println();
+      //      Serial.print(i);
+      //      Serial.print(",");
+      //      Serial.print(sudut);
+      //      Serial.println();
       i++;
       t = millis();
     }
