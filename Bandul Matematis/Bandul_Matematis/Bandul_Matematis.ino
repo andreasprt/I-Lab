@@ -148,14 +148,14 @@ void translate()
     Serial.print("[relay Mati ");
     Serial.println("]");
     digitalWrite(relay, HIGH );
-    dt[0] = "d";
+    dt[0] = "e";
   }
   //  if (dt[0] == "c") {
   //    del = dt[1].toInt();
   //    dt[0] = "";
   //  }
 
-  if (dt[0] == "d") {
+  if (dt[0] == "e") {
     int u = 0;
     waktu = millis();
     while (u <= jmlData) {
@@ -170,9 +170,9 @@ void translate()
         waktu = millis();
       }
     }
-    dt[0] = "e";
+    dt[0] = "";
   }
-  if (dt[0] == "e") {
+  if (dt[0] == "d") {
     for (int i = 0; i < jmlData ; i++) {
       Serial.print("[e,");
       Serial.print(i);
@@ -180,8 +180,9 @@ void translate()
       Serial.print(i);
       Serial.print(",");
       Serial.print(data[i]);
-      Serial.println("]");
+      Serial.print("]");
     }
+    Serial.println();
     dt[0] = "";
 
   }

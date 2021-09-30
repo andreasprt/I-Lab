@@ -96,8 +96,8 @@ void loop() {
   }
   if (dt[0] == "d") {
     dt[0] = "";
-    for (int i = 0; i < jmlData; i++) {
-      Serial.print("[d,");
+    for (int i = 0; i < 50; i++) {
+      Serial.print("[p,");
       Serial.print(i);
       Serial.print(",");
       Serial.print(i);
