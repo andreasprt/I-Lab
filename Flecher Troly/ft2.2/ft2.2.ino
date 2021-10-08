@@ -331,10 +331,10 @@ void buffer_data()
   }
 
   if (dt[0] == "a") {
-    posisi1 = simpanposisi1 + dt[1].toInt();
+    posisi1 = simpanposisi1 - dt[1].toInt();
     Serial.println(dt[1].toInt());
     Serial.print("[a,");
-    Serial.print(posisi1);
+    Serial.print(-posisi1);
     simpanposisi1 = posisi1;
     Serial.println("]");
     dt[0] = "";
@@ -376,7 +376,7 @@ void buffer_data()
   // langsungan
   if (dt[0] == "g") {
     //c,100   d,0 c,0
-    stepper3.moveTo(-100);
+    stepper3.moveTo(-200);
     stepper3.runToPosition();
     digitalWrite(rly, 0);
     stepper3.moveTo(0);
